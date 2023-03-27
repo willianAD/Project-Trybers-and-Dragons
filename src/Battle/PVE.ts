@@ -9,14 +9,17 @@ export default class PVP extends Battle {
     super(characterFighter);
     this._characterFighter = characterFighter;
     this._monster = monster;
+    super.fight();
   }
 
-  // fight(): number {
-  //   while (this._characters1.lifePoints > 0
-  //       && this._characters2.lifePoints > 0) {
-  //     this._characters1.attack(this._characters2);
-  //     this._characters2.attack(this._characters1);
-  //   }
-  //   return super.fight();
-  // }
+  fight(): number {
+    this._monster.forEach((e) => {
+      while (this._characterFighter.lifePoints > 0
+        && e.lifePoints > 0) {
+        this._characterFighter.attack(e);
+        e.attack(this._characterFighter);
+      }
+    });
+    return super.fight();
+  }
 }
