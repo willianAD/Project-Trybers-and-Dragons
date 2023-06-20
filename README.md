@@ -23,26 +23,10 @@ O conhecimento e aplicação dos princípios SOLID.
 
 ## Requisitos
 
-<img src="">
+<img src="https://raw.githubusercontent.com/willianAD/Project-Trybers-and-Dragons/main/image/Projeto%20Trybers%20%26%20Dragons.png">
 
 # Requisitos Obrigatórios
 
-<details>
-  <summary><strong>🐉 Contextualizando 🐲</strong></summary><br />
-
-  No universo de Trybers and Dragons - T&D, quase todos os seres que andam por essas terras pertencem a uma **raça** definida.
-
-  As diversas raças (como, por exemplo, Élfica, Orc ou Anã) definem as características das personagens dentro do jogo desde a sua criação, como os seus pontos de vida e a sua destreza. No entanto, existem seres bestiais denominados **monstros** que não possuem uma raça específica, mas podem lutar.
-
-  Alguns seres também possuem uma **energia** e, ao treinarem o uso da energia, passam a possuir um **arquétipo**. De modo geral, os arquétipos definem a vocação de uma personagem, suas habilidades e visão de mundo: como encaram as situações, exploram masmorras ou enfrentam monstros. Como exemplos de arquétipos presentes em T&D, podemos citar guerreiro, mago e necromante.
-
-  Boa parte dos seres podem ser considerados lutadores, bastando para isso possuir alguns atributos específicos. Em muitas ocasiões podem acontecer lutas entre personagens diversas, bem como entre personagens e monstros.
-
-  Agora, cabe a você, nobre ~~dev~~, explorar essas terras e cumprir as quests que surgirão ao longo da sua incrível ~~jornada~~ leitura do README.
-
-  **_Now, follow ~~the blind~~ the dungeon master!_**
-
-</details>
 
 ### 1 - Crie a classe `Race`
 
@@ -185,8 +169,6 @@ Sua próxima missão é tornar possível o uso destes dois tipos de energia:  *"
       - O tipo `EnergyType` também deve ser exportado.
     - `amount`, do tipo `number`.
 
-✨ Dica de mestre: ✨
-- Para implementar a `interface Energy`, é necessário criar um tipo novo, o `type EnergyType`;
 
 <br>
 
@@ -350,10 +332,6 @@ Para fixar bem esse conceito, preparamos para você a missão especial de criar 
   - `levelUp()`, que não recebe parâmetro e não possui retorno (`void`);
   - `receiveDamage()`, que recebe um `attackPoints` do tipo `number` como parâmetro e retorne um `number`.
 
-✨ Dica de mestre: ✨
-- O atributo `energy` e o método `special()` devem ser opcionais;
-  - Pesquise sobre: `Optional Properties` ou `Optional parameters` em interfaces;
-- Agora você pode descomentar os trechos de código dos arquivos do diretório `Battle`; (`Battle.ts` e `index.ts`).
 
 <br>
 
@@ -442,8 +420,6 @@ As dicas para completar essa *quest* são:
     - Aqui você pode expandir sua mente e realizar a lógica que achar mais interessante para um ataque especial, use tudo que aprendeu no mundo de T&D! :dragon_face:
     - Esta parte do requisito não esta sendo avalida é apenas para você se divertir aprendendo. 💚
 
-✨ Dica de mestre: ✨
-- Para gerar valores aleatórios, use a função `getRandomInt` fornecida no arquivo `src/utils.ts`.
 
 <br>
 
@@ -543,8 +519,6 @@ O que você deve saber para seguir em frente:
 
 <br>
 
-✨ Dica de mestre: ✨
-- Aqui vamos precisar que os métodos de `Fighter` que recebiam um inimigo do tipo `Fighter` agora possam receber um `SimpleFighter`. Assim um `Fighter` pode atacar um `Monster` 😄.
 
 > ⚠️ **Atenção**:
 > - Para que os testes funcionem corretamente, a classe `Monster` deve ser exportada de forma padrão ( com `export default`).
@@ -725,9 +699,6 @@ Algumas dicas se fazem necessárias para completar sua última missão no mundo 
   - A função recebe por parâmetro um *array* de batalhas (`battles`) e este *array* é do tipo `Battle`; ✨✨
   - Dentro da função, crie uma repetição percorrendo este array e chame o método `fight`;
   - Ao final do arquivo `index.ts` exporte `runBattles`.
-
-✨ Última dica de mestre: ✨
-- Lembre-se `Battle` não pode ser instanciada, pois é uma classe abstrata;
 
 <br>
 
